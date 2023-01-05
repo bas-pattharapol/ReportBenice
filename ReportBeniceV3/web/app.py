@@ -14,7 +14,7 @@ class Encoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, decimal.Decimal): return float(obj)
 
-
+#123456
 app = Flask(__name__)
 
 count = 3
@@ -315,4 +315,4 @@ def Report_OEE_API():
          
         
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True ,port=5001)
+    app.run(host='0.0.0.0', debug=True ,port=5012)
